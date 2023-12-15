@@ -1,0 +1,297 @@
+/* ! Colors */
+
+:root {
+  --white-color: white;
+  --black-color: black;
+  --first-color: #0b1d26;
+  --second-color: #333;
+  --thirdh-color: #fbd784;
+}
+
+/* ! All Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--first-color);
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* ! Header Styles */
+
+header .container {
+  width: 90%;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header .menu a {
+  font-weight: 700;
+}
+
+header .account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .user a {
+  font-size: 1.0625rem;
+}
+
+header .user-icon a {
+  font-size: 1.6rem;
+}
+
+.menu-bars {
+  display: none;
+}
+
+/* ! Main Styles */
+
+.start {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 55rem;
+  margin: auto;
+  margin-top: 10rem;
+  line-height: 5rem;
+}
+
+.start .start-head {
+  display: flex;
+  gap: 2rem;
+}
+
+.start .start-head-second {
+  color: var(--thirdh-color);
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.start .start-body {
+  font-size: 4rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.start-footer button,
+.first-article-footer button {
+  width: 9rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--white-color);
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.easy-access {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: -15rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social .follow {
+  color: var(--white-color);
+  transform: rotate(90deg);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 0.9375rem;
+}
+
+.social #social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  background: transparent;
+  transition: all 1s ease-in;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sidebar-list-menu li a {
+  display: inline-block;
+  line-height: 3.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.sidebar-list-menu li a.active {
+  font-weight: 900;
+}
+
+.articles {
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.first-article {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.articles svg {
+  display: flex;
+}
+
+.first-article-info .first-article-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.first-title {
+  color: var(--thirdh-color);
+  font-weight: 800;
+  font-size: 1.125rem;
+}
+
+.first-article-head {
+  color: var(--white-color);
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.first-article-body {
+  color: var(--white-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.first-article-footer button {
+  color: var(--thirdh-color);
+}
+
+.first-article-bg {
+  font-weight: 700;
+  font-size: 15rem;
+  color: var(--white-color);
+  opacity: 0.1;
+}
+
+#first-article {
+  position: absolute;
+  bottom: -20rem;
+}
+
+#second-article {
+  position: absolute;
+  bottom: -68rem;
+}
+
+#thirdh-article {
+  position: absolute;
+  bottom: -118rem;
+}
+
+/* ! Footer Styles */
+
+.footer {
+  width: 90%;
+  margin: 8rem auto 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mntn-body {
+  font-size: 1.125rem;
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 2rem;
+  width: 21rem;
+  margin: 3rem 0;
+}
+
+.mntn-footer a {
+  font-size: 1.12rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.lists {
+  display: flex;
+  align-items: flex-start;
+  gap: 15rem;
+}
+
+.more-the-blog,
+.more-the-mntn {
+  line-height: 2.5rem;
+}
+
+.more-the-blog-head a,
+.more-the-mntn-head a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--thirdh-color);
+}
